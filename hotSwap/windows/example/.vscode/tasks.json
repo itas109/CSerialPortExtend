@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+            "type": "shell",
+            "label": "winMinGWBuild",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/../src/CSerialPortHotSwap.cpp",
+                "-I",
+                "${workspaceFolder}/../src",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "D:\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}
